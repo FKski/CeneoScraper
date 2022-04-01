@@ -1,5 +1,5 @@
 import requests
 
-url = "https://www.ceneo.pl/91714422#tab=reviews"
-response = requests.get(url)
+URL = "https://www.ceneo.pl/91714422#tab=reviews"
+response = requests.get(URL)
 print(response.status_code)
