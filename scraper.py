@@ -4,9 +4,9 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
+productId = input("Please, pass the product id: ")
 
-
-url = "https://www.ceneo.pl/63490289#tab=reviews"
+url = ("https://www.ceneo.pl/" + productId + "#tab=reviews")
 all_opinions = []
 while (url):
     response = requests.get(url)
@@ -52,9 +52,6 @@ while (url):
         url = "https://www.ceneo.pl" + page.select_one("a.pagination__next")["href"]
     except TypeError:
         url = None
-        
-with open("opinions/63490289.json", "w", encoding = "UTF-8") as jf:
+
+with open("opinions/" + productId + ".json", "w", encoding = "UTF-8") as jf:
     json.dump(all_opinions, jf, indent =4, ensure_ascii= False)
-
-
-
