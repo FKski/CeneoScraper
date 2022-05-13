@@ -29,4 +29,12 @@
     a. utworzenie funkcji do ekstrakcji elementow strony 
     b. utworzenie slownika selektorow
     c. uzycie dictionary comprehension do pobrania skladowych pojedynczej opinii na podstawie slownika selektorow
-8.
+8. Analiza pobranych opinii dla konkretnego produktu:
+    a. wyliczenie podstawowych statystyk:
+        - liczba wszystkich opiniii
+        - liczba opinii dla których ppodano zalety
+        - liczba opinii dla których ppodano wady
+        - średnia ocena produktu
+    b. przygotowanie wykresów:
+        - udział poszczególnych rekomendacji w ogólnej liczbie opinii
+        - histogram poszczególnych ocen
